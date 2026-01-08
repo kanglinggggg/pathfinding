@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pathfinding Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Pathfinding Visualizer</h1>
+
+<div class="controls">
+  <button id="setStart">Set Start</button>
+  <button id="setEnd">Set End</button>
+  <label>Algorithm:
+    <select id="algoSelect">
+      <option value="bfs">BFS</option>
+      <option value="dfs">DFS</option>
+      <option value="dijkstra">Dijkstra</option>
+      <option value="astar">A*</option>
+    </select>
+  </label>
+  <button id="runAlgo">Run</button>
+  <button id="clearBtn" class="ghost">Clear Board</button>
+  <button id="mazeBtn" class="secondary">Generate Maze</button>
+  <button id="weightBtn" class="ghost">Toggle Weight Mode</button>
+  <label>Grid Size:<input type="number" id="gridSize" value="20" min="8" max="40" style="width:60px"></label>
+</div>
+
+<div id="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
